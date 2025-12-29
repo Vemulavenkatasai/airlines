@@ -5,7 +5,7 @@ import joblib
 # =========================
 # Load trained model
 # =========================
-model = joblib.load("C:\\Users\\venky\\Downloads\\model.pkl")
+model = joblib.load("model.pkl")
 
 st.title("✈️ Airline Customer Satisfaction Prediction")
 st.markdown("### Enter Passenger Details")
@@ -88,3 +88,4 @@ if st.button("Predict Satisfaction"):
         st.success(f"😊 Passenger is **Satisfied** (Confidence: {probability[0][1]*100:.2f}%)")
     else:
         st.error(f"😐 Passenger is **Neutral or Dissatisfied** (Confidence: {probability[0][0]*100:.2f}%)")
+
