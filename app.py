@@ -85,8 +85,9 @@ if st.button("Predict Satisfaction"):
     probability = model.predict_proba(input_data)
 
     if prediction[0] == 1:
-        st.success(f"😊 Passenger is **Satisfied** (Confidence:%)")
+        st.success(f"😊 Passenger is **Satisfied**)")
     else:
-        st.error(f"😐 Passenger is **Neutral or Dissatisfied**%)")
+        st.error(f"😐 Passenger is **Neutral or Dissatisfied*)")
+
 
 
